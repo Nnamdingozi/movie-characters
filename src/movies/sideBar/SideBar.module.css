@@ -1,0 +1,17 @@
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+li {
+    border: 2px solid rgb(16, 16, 144);
+    margin: 5px 5px;
+    list-style: none;
+    border-radius: 30px;
+    width: 12vw;
+    height: 5vh;
+    text-align: center;
+}
+a {
+  text-decoration: none;
+
+}
