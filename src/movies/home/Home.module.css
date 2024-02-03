@@ -1,0 +1,13 @@
+.container {
+background-image: url('../../resources/pexels-skitterphoto-390089.jpg');
+background-size: 1400px 600px;
+background-repeat: no-repeat;
+text-align: center;
+height: 100vh;
+color: red
+}
+.movieNames {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
