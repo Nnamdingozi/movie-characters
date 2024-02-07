@@ -1,6 +1,7 @@
 import React from "react";
 import styles from './CharacterCard.module.css';
 
+
 export default function CharacterCard({ data }) {
     
     const card = data?.map(character => {
