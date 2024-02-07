@@ -14,4 +14,10 @@ li {
 a {
   text-decoration: none;
 
+}.btn {
+  border: 2px solid rgb(16, 16, 144);
+  border-radius: 30px;
+  width: 12vw;
+    height: 5vh;
+    background-color: blanchedalmond;
 }

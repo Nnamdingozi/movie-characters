@@ -1,0 +1,7 @@
+.container{
+    height: 50vh;
+    width: 100%;
+    background-image: url('../../resources/pexels-cottonbro-studio-3945313.jpg');
+background-size: 1200px 600px;
+background-repeat: no-repeat;
+}

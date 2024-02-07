@@ -1,11 +1,12 @@
 import React from "react";
-import styles from './CharacterCard.module.css'
+import styles from './CharacterCard.module.css';
 
 export default function CharacterCard({ data }) {
-    const card = data.map(character => {
+    
+    const card = data?.map(character => {
         return (
-            <div key={character.id} id={character.id} className={styles.banner}>
-                <h1>{character.fullName}</h1>
+            <div key={character.id}  className={styles.banner}>
+                <h1> {character.fullName}</h1>
                 <div className={styles.imageContainer}>
                     <img src={character.imageUrl} alt={character.image} className={styles.img}></img>
                 </div>

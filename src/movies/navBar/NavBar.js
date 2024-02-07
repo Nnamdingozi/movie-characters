@@ -5,7 +5,8 @@ import styles from './NavBar.module.css'
 export default function NavBar() {
     return (
         <ul>
-        <li><NavLink to='home'> Home</NavLink></li>
+            <li className={styles.movie}>MOVIE CHARACTERS INFORMATION</li>
+        <li><NavLink to='home'> MOVIES</NavLink></li>
         <li><NavLink to='/GameOfThrone'>Game Of Thrones</NavLink></li>
         </ul>
     )
