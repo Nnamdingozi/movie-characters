@@ -4,7 +4,11 @@ import SideBar from "../sideBar/SideBar";
 import styles from './GameOfThrone.module.css';
 
 
+
+
 export default function GameOfThrone(props) {
+    
+
     return (
         <div className={styles.container}>
 

@@ -7,7 +7,11 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import Home from './movies/home/Home';
 import Root from './movies/root/Root';
 import Character from './movies/character/Character';
-
+import Wednesday from './movies/wednesday/Wednesday';
+import LordOfTheRings from './movies/lordOfTheRings/LordOfTheRings';
+import TheOrder from './movies/theOrder/TheOrder';
+import Manifest from './movies/manifest/Manifest';
+import PrisonBreak from './movies/prisonBreak/PrisonBreak';
 
 function App() {
   const [data, setData] = useState([]);
@@ -30,12 +34,16 @@ setIsLoading(false)
     //use navbar directly instead of root
     <>
     <Route path ='/'  element={<Root />} >
-    <Route path= 'home' element={<Home data={data} />}></Route>
-    <Route path='GameOfThrone' element={<GameOfThrone data={data} loading={loading}/>} >
-      
-    </Route>
+    <Route path= 'movies' element={<Home data={data} />}></Route>
+    <Route path='GameOfThrone' element={<GameOfThrone data={data} loading={loading}/>} ></Route>
     <Route path='/GameOfThrone/:id' element ={<Character data ={data} />}></Route>
-      
+    <Route path='wednesday' element ={<Wednesday data ={data} />}></Route>
+    <Route path='prisonBreak' element ={<PrisonBreak data ={data} />}></Route>
+    <Route path='lordOfTheRings' element ={<LordOfTheRings data ={data} />}></Route>
+    <Route path='theOrder' element ={<TheOrder data ={data} />}></Route>
+    <Route path='manifest' element ={<Manifest data ={data} />}></Route>
+    
+   
     </Route> 
     
     </>

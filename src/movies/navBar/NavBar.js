@@ -6,8 +6,10 @@ export default function NavBar() {
     return (
         <ul>
             <li className={styles.movie}>MOVIE CHARACTERS INFORMATION</li>
-        <li><NavLink to='home'> MOVIES</NavLink></li>
-        <li><NavLink to='/GameOfThrone'>Game Of Thrones</NavLink></li>
+            <li><NavLink to='/'>Home</NavLink></li>
+        <li><NavLink to='movies'> MOVIES</NavLink></li>
+        <li><NavLink to='/GameOfThrone'>About</NavLink></li>
+        
         </ul>
     )
 }

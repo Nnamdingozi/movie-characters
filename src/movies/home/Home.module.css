@@ -4,10 +4,14 @@ background-size: 1400px 600px;
 background-repeat: no-repeat;
 text-align: center;
 height: 100vh;
-color: red
+color: rgb(105, 53, 53)
 }
 .movieNames {
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+h3 {
+    font-size: 1.527rem;
+    color: rgb(99, 99, 201);
 }
