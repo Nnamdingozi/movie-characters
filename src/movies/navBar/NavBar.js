@@ -1,14 +1,15 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import styles from './NavBar.module.css'
+import styles from './NavBar.module.css';
+import { useParams } from "react-router-dom";
 
 export default function NavBar() {
+    const {id} = useParams();
     return (
         <ul>
-            <li className={styles.movie}>MOVIE CHARACTERS INFORMATION</li>
-            <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='movies'> MOVIES</NavLink></li>
-        <li><NavLink to='/GameOfThrone'>About</NavLink></li>
+            <li className={styles.movie}> <h3>MOVIE CHARACTERS INFORMATION</h3></li>
+             <li><NavLink to='/'>  Home </NavLink></li>
+            
         
         </ul>
     )
