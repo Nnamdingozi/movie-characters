@@ -11,7 +11,7 @@ const navigate = useNavigate()
 const { id } = useParams(data.id);
     const items = data?.map (item => 
         
-<button className={styles.fullNameBtn} onClick={() => navigate(`/character/${item.id}`)}> {item.fullName} </button>
+<button  onClick={() => navigate(`/character/${item.id}`)}> {item.fullName} </button>
         
  );
     

@@ -4,7 +4,6 @@ import './App.css';
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
 import Character from './movies/character/Character';
 import CharacterCard from './movies/characterCard/CharacterCard';
-import NavBar from './movies/navBar/NavBar';
 
 
 function App() {

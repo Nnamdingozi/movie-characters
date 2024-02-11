@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams, useNavigate } from 'react-router-dom';
-import styles from './Character.module.css';
+import styles from './Character.module.css'
 import NavBar from "../navBar/NavBar";
 
 export default function Character({ data }) {
@@ -14,7 +14,7 @@ export default function Character({ data }) {
   return item ? (
     <>
       <NavBar />
-      <button className={ styles.characterBtn}  onClick={goBack}>Back</button>
+      
       <div key={item.id} className={styles.banner}>
        
         <h1> {item.fullName}</h1>

@@ -3,7 +3,7 @@ import styles from './CharacterCard.module.css';
 import { useNavigate } from "react-router";
 import NavBar from "../navBar/NavBar";
 import FullName from "../fullName/FullName";
-import { useState } from "react";
+
 
 export default function CharacterCard({ data }) {
 
@@ -34,7 +34,6 @@ export default function CharacterCard({ data }) {
     return (
         <>
         <NavBar />
-        <h1>Game of Throne Movie Characters</h1>
         <FullName data={data} />
         <div className={styles.wrapper}>
             

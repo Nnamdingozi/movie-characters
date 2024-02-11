@@ -1,15 +1,18 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styles from './NavBar.module.css';
-import { useParams } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 export default function NavBar() {
-    const {id} = useParams();
+    const navigate = useNavigate();
+    const goBack = () => {
+        navigate(-1)
+    }
     return (
         <ul>
-            <li className={styles.movie}> <h3>MOVIE CHARACTERS INFORMATION</h3></li>
+            <li className={styles.movie}> <h1>Game Of Thrones Movie Characters</h1></li>
              <li><NavLink to='/'>  Home </NavLink></li>
-            
+            <li><button className={styles.navbarBtn} onClick={goBack}>Back</button></li>
         
         </ul>
     )

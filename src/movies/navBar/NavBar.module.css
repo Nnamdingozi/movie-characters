@@ -17,3 +17,9 @@ li {
     font-weight: bolder;
 
 }
+.navbarBtn {
+    width: 10vw;
+    height: 5vh;
+    /* color: orangered;
+    color: white; */
+}
