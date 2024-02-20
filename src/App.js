@@ -10,27 +10,27 @@ function App() {
   const [data, setData] = useState([]);
   const [loading, setIsLoading] = useState(true)
   const fetchData = async () => {
-const response = await fetch('https://thronesapi.com/api/v2/Characters')
-const json = await response.json()
-setData(json)
-setIsLoading(false)
+    const response = await fetch('https://thronesapi.com/api/v2/Characters')
+    const json = await response.json()
+    setData(json)
+    setIsLoading(false)
   }
-  
 
-  useEffect(()=>{
-   fetchData().catch(console.error)
-   
-  
+
+  useEffect(() => {
+    fetchData().catch(console.error)
+
+
   }, []);
- 
+
   const router = createBrowserRouter(createRoutesFromElements(
-    //use navbar directly instead of root
+
     <>
-    <Route path= '/' element={<CharacterCard data={data} />}></Route>
-    
-    <Route path='/character/:id' element ={<Character data ={data} />}></Route>
-    
-    
+      <Route path='/' element={<CharacterCard data={data} />}></Route>
+
+      <Route path='/character/:id' element={<Character data={data} />}></Route>
+
+
     </>
   ))
 

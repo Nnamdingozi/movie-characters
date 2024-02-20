@@ -1,25 +1,21 @@
 import React from "react";
-import { useParams, useNavigate } from 'react-router-dom';
-import styles from './Character.module.css'
+import { useParams } from 'react-router-dom';
 import NavBar from "../navBar/NavBar";
 
 export default function Character({ data }) {
-  
-  const navigate = useNavigate();
+
   const { id } = useParams();
   const item = data[id];
-  const goBack = () => {
-    navigate(-1);
-  }
+
   return item ? (
-    <>
+    <div className="container">
       <NavBar />
-      
-      <div key={item.id} className={styles.banner}>
-       
+      <h1 className="text-primary text-center fst-italic my-5">Game Of Thrones Movie Character</h1>
+      <div key={item.id} className="container-fluid mt-15 justify-content-center row text-center">
+
         <h1> {item.fullName}</h1>
-        <div className={styles.imageContainer}>
-          <img src={item.imageUrl} alt={item.image} className={styles.img}></img>                     </div>
+        <div className="h-75 min-vh-75 w-50 border border-dark thumbnail p-5" >
+          <img className="img-fluid" src={item.imageUrl} alt={item.image} ></img>                     </div>
 
         <div>
           <p>First Name: {item.firstName}</p>
@@ -31,7 +27,7 @@ export default function Character({ data }) {
 
 
       </div>
-    </>
+    </div>
 
   ) : <p>Character not found</p>
 
