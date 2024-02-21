@@ -3,7 +3,7 @@
 
 ## Description
 
-This app gives information about  favorite movie characters. It is still in development and as such can only give information about characters in Gane of Throne.
+This app gives information about Game of Thrones Movie characters.It is a two page app, built with react and react-routers. The app is styled using bootstrap.
 
 ## Getting Started with Create React App
 
