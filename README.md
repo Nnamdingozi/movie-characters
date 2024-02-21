@@ -2,14 +2,15 @@
 # Movie Characters app
 
 ## Description
+This app gives information about Game of Thrones Movie characters.It is a two page app, built with react and react-routers. The app is styled using bootstrap.
 
 ## Features
 
--React hooks
--React Routers
--Bootstrap
+- React hooks
+- React Routers
+- Bootstrap
 
-This app gives information about Game of Thrones Movie characters.It is a two page app, built with react and react-routers. The app is styled using bootstrap.
+
 
 ## Getting Started with Create React App
 
